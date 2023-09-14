@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #colorPicker {
+            font-size: 18px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background Color Changer</h1>
+    <label for="colorPicker">Select a background color:</label>
+    <input type="color" id="colorPicker" onchange="changeBackgroundColor()">
+    
+    <script>
+        function changeBackgroundColor() {
+            const colorPicker = document.getElementById("colorPicker");
+            document.body.style.backgroundColor = colorPicker.value;
+        }
+    </script>
+</body>
+</html>
