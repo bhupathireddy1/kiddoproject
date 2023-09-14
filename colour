@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Selection App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .color-box {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+        select {
+            font-size: 18px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Color Selection App</h1>
+        <div class="color-box" id="colorBox"></div>
+        <label for="colorSelect">Select a color:</label>
+        <select id="colorSelect" onchange="changeColor()">
+            <option value="red">
